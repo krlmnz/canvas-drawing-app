@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Canvas Drawing App</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<canvas id="canvas"></canvas>
+
+<button onclick="Restore()">Undo</button>
+<button onclick="Clear()">Clear</button>
+
+<div onclick="change_color(this)" style="background:red" class="stroke-color"></div>
+<div onclick="change_color(this)" style="background:blue" class="stroke-color"></div>
+<input type="color" oninput="stroke_color = this.value" placeholder="Colors">
+</div>
+<input type="range" min="1" max="100" oninput="stroke_width = this.value">
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
